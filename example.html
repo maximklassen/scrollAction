@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scrollaction.js"></script>
+    <title>scrollAction</title>
+</head>
+<body>
+    <div class="color-box invisible" id="first"></div>
+    <div class="color-box invisible" id="second"></div>
+    <div class="color-box invisible" id="third"></div>
+    <div class="color-box invisible" id="fourth"></div>
+    <script>
+    window.addEventListener('scroll', function() {
+
+        /*document.querySelectorAll('.color-box').forEach(function(elem){
+            let wvp = whatVisible(elem);
+            if (wvp >= 0.8) {
+                elem.classList.remove('invisible');
+            }
+            if (wvp <= 0.2) {
+                elem.classList.add('invisible');
+            }
+        });*/
+        setIsVisible('.color-box',.8);
+    });
+    </script>
+</body>
+</html>

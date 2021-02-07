@@ -1,0 +1,20 @@
+.color-box {
+    margin: 300px 30px;
+    height: 350px;
+    transition: background-color 1.5s;
+}
+.color-box#first {
+    background-color: #8a2be2;
+}
+.color-box#second {
+    background-color: #ffc400;
+}
+.color-box#third {
+    background-color: #0470fd;
+}
+.color-box#fourth {
+    background-color: #26f813;
+}
+.color-box.invisible {
+    background-color: #ff6347 !important;
+}
